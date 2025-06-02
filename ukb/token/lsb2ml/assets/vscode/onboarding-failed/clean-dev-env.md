@@ -174,3 +174,4 @@ Your Mac now behaves like:
 If you want to make this repeatable, I can script it into a `.sh` file (`clean-dev-env.sh`) and you can drop it into any intern’s laptop like a dev nuke.
 
 Let me know—I'll ship it.
+# flick 20250602215535-jky4
