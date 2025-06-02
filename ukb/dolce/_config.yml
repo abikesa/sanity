@@ -6,7 +6,7 @@
 title                       : Ukusoma
 author                      : 
 copyright                   : "2025"
-logo                        : figures/decision-tree.jpeg
+logo                        : https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png
 email                       : "abikesa.sh@gmail.com"
 exclude_patterns            : ["LICENSE.md"]
 
