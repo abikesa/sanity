@@ -27,7 +27,7 @@ if datetime.date.today() == deadline_date:
     )
     sg.send(email_message)
     print("Email sent!")
-
+     
     # Send SMS
     client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
     sms_message = client.messages.create(
