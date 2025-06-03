@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>🐋</title>
+  <title>🌊❤️🌀🐬🔁</title>
   <link rel="icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     html, body {
       margin: 0;
@@ -11,39 +12,53 @@
       height: 100%;
       background-color: #001a33;
       color: white;
-      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
+      font-family: system-ui, sans-serif;
     }
 
-    .whale {
-      font-size: 40vw;
-      animation: drift 12s ease-in-out infinite;
-      transform-origin: center;
+    .glyphs {
+      display: flex;
+      gap: 4vw;
+      font-size: 10vw;
+      animation: pulse 20s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      20% { transform: scale(1.1); opacity: 0.95; }
+      40% { transform: scale(0.98); opacity: 1; }
+      60% { transform: scale(1.05); opacity: 0.9; }
+      80% { transform: scale(1); opacity: 1; }
+    }
+
+    .glyph {
       display: inline-block;
+      transition: transform 0.5s ease;
     }
 
-    @keyframes drift {
-      0% {
-        transform: translateY(0px) rotate(0deg);
-      }
-      25% {
-        transform: translateY(-20px) rotate(-2deg);
-      }
-      50% {
-        transform: translateY(0px) rotate(0deg);
-      }
-      75% {
-        transform: translateY(20px) rotate(2deg);
-      }
-      100% {
-        transform: translateY(0px) rotate(0deg);
+    .glyph:hover {
+      transform: scale(1.3) rotate(5deg);
+    }
+
+    @media (max-width: 600px) {
+      .glyphs {
+        flex-direction: column;
+        gap: 2vh;
+        font-size: 15vw;
       }
     }
   </style>
 </head>
 <body>
-  <div class="whale">🐬</div>
+  <div class="glyphs">
+    <div class="glyph">🌊</div>
+    <div class="glyph">❤️</div>
+    <div class="glyph">🌀</div>
+    <div class="glyph">🐬</div>
+    <div class="glyph">🔁</div>
+  </div>
 </body>
 </html>
