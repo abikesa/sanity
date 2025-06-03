@@ -38,47 +38,83 @@
       font-size: 1.2em;
     }
 
+    .reveal {
+      cursor: pointer;
+      opacity: 0.15;
+      transition: opacity 0.3s ease;
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+    }
+
     @media (max-width: 600px) {
       body {
         padding: 1em;
       }
     }
+
+    .reveal {
+  cursor: pointer;
+  opacity: 0.03;
+  filter: blur(5px) brightness(60%);
+  color: #ccc;
+  transition: all 0.6s ease;
+}
+.reveal.revealed {
+  opacity: 1;
+  filter: none;
+  color: #f8f8f2;
+}
+
+
   </style>
 </head>
 <body>
   <div class="letter">
     <div class="location">📍 Turin, November 14, 1881</div>
 
-    <p>Dear friend 🧑‍🤝‍🧑,</p>
+    <p class="reveal">Dear friend 🧑‍🤝‍🧑,</p>
 
-    <p>🌊 <em>What is this, our life?</em><br>
-    🚣 A boat adrift on the sea —<br>
+    <p class="reveal">🌊 <em>What is this, our life?</em><br>
+    🚣 A <a href="https://en.wikipedia.org/wiki/Franz_Overbeck#cite_ref-1">boat</a> adrift on the sea —<br>
     and all we know for certain is that one day,<br>
     we shall <strong>capsize</strong>. ⚰️</p>
 
-    <p>Here we are, two good old boats ⛵⛵<br>
+    <p class="reveal">Here we are, two good old boats ⛵⛵<br>
     faithful neighbors 🌅,<br>
     and your steady hand 🤝<br>
     has often kept me from tipping over 🌀.</p>
 
-    <p>Let us voyage on 🌍,<br>
+    <p class="reveal">Let us voyage on 🌍,<br>
     each for the other’s sake ❤️,<br>
     for a long time yet ⏳ —<br>
     a long time! ♾️</p>
 
-    <p>We would miss each other so. 😔</p>
+    <p class="reveal">We would miss each other so. 😔</p>
 
-    <p>Calm seas 🌤️, good winds 🍃,<br>
+    <p class="reveal">Calm seas 🌤️, good winds 🍃,<br>
     and above all — <strong>sun</strong> ☀️ 🏝️ :<br>
     what I wish for myself, I wish for you too 🙏.</p>
 
-    <p>And forgive me that my gratitude 💐<br>
+    <p class="reveal">And forgive me that my gratitude 💐<br>
     can find expression only in such a wish ✨<br>
     and has no influence<br>
     on wind 🌬️ or weather 🌧️.</p>
 
-    <p class="signature">Your devoted friend,<br>
+    <p class="reveal signature">Your devoted friend,<br>
     Friedrich Nietzsche 🖋️</p>
   </div>
+
+  <script>
+    document.querySelectorAll('.reveal').forEach(el => {
+      el.addEventListener('click', () => {
+        el.classList.add('revealed');
+      });
+      el.addEventListener('touchstart', () => {
+        el.classList.add('revealed');
+      });
+    });
+  </script>
 </body>
 </html>
