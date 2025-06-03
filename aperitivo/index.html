@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>NMDA - Ukubona Wiki</title>
       <!-- PrismJS CSS + JS -->
-  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css" rel="stylesheet"/>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
     <!-- Favicon Configuration -->
@@ -70,6 +70,7 @@
       overflow: hidden;
       font-size: 0.85em;
     }
+    
   </style>
 </head>
 <body>
@@ -367,9 +368,7 @@
       <a href="https://www.gutenberg.org/files/844/844-h/844-h.htm">Algernon</a>.
     </p>
     <div id="codeblock">
-      <pre><code class="language-python">import networkx as nx
-
-        
+      <pre><code class="language-python">
 # Re-import required libraries due to kernel reset
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -421,10 +420,6 @@ output_path
   </div>
 </aside>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
-
 <script>
   function toggleCode() {
     const block = document.getElementById("codeblock");
@@ -463,14 +458,30 @@ output_path
     opacity: 1;
     display: block;
   }
-  #codeblock pre, #codeblock code {
-    margin: 0;
-    padding: 8px;
-    box-sizing: border-box;
-    white-space: pre-wrap;
-    font-family: monospace;
-    background: #f5f5f5;
+
+#codeblock pre,
+#codeblock code {
+  margin: 0;
+  padding: 3px;
+  box-sizing: border-box;
+  font-family: monospace;
+  white-space: pre;         /* preserve exact indentation */
+  overflow: auto;           /* scrollbars as needed */
+  line-height: 1.5em;       /* prevent overlap */
+  background: #f5f5f5;      /* default light mode */
+  color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  #codeblock pre,
+  #codeblock code {
+    background: #1e1e1e;    /* dark mode background */
+    color: #ddd;
   }
+}
+
+
+
 </style>
 
 
