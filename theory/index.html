@@ -24,18 +24,19 @@
       padding-bottom: 4px;
     }
 
-    .content {
-      opacity: 0;
-      transition: opacity var(--fade-duration, 3s) ease-out;
-      background: #1f1f1f;
-      padding: 10px 14px;
-      margin-top: 8px;
-      border-left: 3px solid #555;
-      border-radius: 4px;
-      display: inline-block;
-      width: auto;
-      pointer-events: none;
-    }
+.content {
+  opacity: 0;
+  transition: opacity var(--fade-duration, 3s) ease-out;
+  background: #1f1f1f;
+  padding: 10px 14px;
+  margin-top: 8px;
+  border-left: 3px solid #555;
+  border-radius: 4px;
+  display: inline-block;
+  width: auto;
+  /* pointer-events: none; ← 🚫 REMOVE THIS LINE */
+}
+
 
     .line:hover .content {
       opacity: 1;
@@ -96,16 +97,16 @@
 
   <div class="line">
     <div class="label">🤲 Sensorimotor / Ganglionic</div>
-    <div class="content">"Body-in-the-World" → Breath, tension, gut, embodiment.</div>
+    <div class="content">"Body-in-the-World" → Breath, tension, gut, embodiment, association, <a href="https://en.wikipedia.org/wiki/Operant_conditioning">conditioning</a>.</div>
   </div>
 
   <div class="line">
-    <div class="label">🌐 Network / Regional</div>
+    <div class="label">🌐 Network / Functional</div>
     <div class="content">"Cognitive Cartography" → Negotiation, prediction, recursion.</div>
   </div>
 
   <div class="line">
-    <div class="label">🔁 Mythic / Recursive</div>
+    <div class="label">🔁 Representation / Hallucination</div>
     <div class="content">"Symbolic Transcendence" → Ukubona: recursive symbolic intelligence.</div>
   </div>
 
