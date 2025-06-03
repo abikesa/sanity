@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="./kitabo/ensi/figures/kanagawa.png" alt="Kanagawa Wave" width="500"/>
+  <img src="./kitabo/ensi/figures/kanagawa.jpeg" alt="Kanagawa Wave" width="500"/>
 </p>
 
 # Ukusoma 📚🌒🧠
