@@ -1,10 +1,13 @@
 
+<p align="center">
+  <img src="./kitabo/ensi/figures/kanagawa.png" alt="Kanagawa Wave" width="500"/>
+</p>
+
 # Ukusoma 📚🌒🧠
 
 > *“What the eye sees is different from what the mind reads. [Ukusoma](https://www.ahlloyd.com/2024/09/sean-diddy-combs-and-the-limits-of-hedonism.html) is not sight. It is the slow translation of signals into wisdom.”*  
 > — Anonymous
 
-![](./kitabo/ensi/figures/tidjane-thiam.jpeg)
 
 Welcome to the **Ukusoma** prototype.  
 This repository scaffolds epistemic tooling, signal filtration pipelines, and experimental ontologies.  
