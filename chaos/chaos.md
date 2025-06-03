@@ -114,3 +114,4 @@ Do not attempt compilation.
 # flick 20250530010906-77MF
 # flick 20250530024814-ZIfI
 # flick 20250602215533-U9Mg
+# flick 20250603202522-RiVP
