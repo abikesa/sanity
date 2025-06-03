@@ -31,8 +31,8 @@ fi
 
 if [ ! -d "$TARGET_DIR" ]; then
     echo "❌ Directory not found: $TARGET_DIR"
-    exit 1      
-fi
+    exit 1         
+fi    
 
 # === Markdown output safe redirect ===
 if $OUTPUT_MD; then
