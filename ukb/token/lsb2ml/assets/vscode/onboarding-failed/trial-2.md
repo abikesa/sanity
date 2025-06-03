@@ -134,3 +134,4 @@ This is the **cleanest escape hatch from SSH hell**. One token, paste once, Keyc
 If you want, I can drop a one-liner to test whether Keychain is working or set up a template shell script to onboard any intern in 30 seconds flat. Just say the word.
 # flick 20250530024815-7mBK
 # flick 20250530033035-O7sB
+# flick 20250603004039-xDMO
