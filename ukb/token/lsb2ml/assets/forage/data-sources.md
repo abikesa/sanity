@@ -56,3 +56,4 @@ By following these steps, you'll equip Jonathan with the necessary data and tool
 [2]: https://baseballsavant.mlb.com/leaderboard/expected_statistics?utm_source=chatgpt.com "Statcast Expected wOBA, xBA, xSLG | baseballsavant.com - MLB.com"
 # flick 20250603004037-qF1D
 # flick 20250603031412-vgrl
+# flick 20250603163535-RHJv
