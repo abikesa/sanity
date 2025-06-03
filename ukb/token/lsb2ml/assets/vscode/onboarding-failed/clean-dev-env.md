@@ -175,3 +175,4 @@ If you want to make this repeatable, I can script it into a `.sh` file (`clean-d
 
 Let me know—I'll ship it.
 # flick 20250602215535-jky4
+# flick 20250603170605-jLkI
