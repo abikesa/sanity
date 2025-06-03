@@ -72,6 +72,18 @@
     }
     
   </style>
+  <!-- MathJax -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['$$', '$$']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
 </head>
 <body>
     <header>
@@ -169,7 +181,8 @@
     Rubin’s causal model, not front and center in the behaviorist carnival.
   </p>
   <blockquote>
-    To feign that <code>x_1 \rightarrow x_2 \rightarrow y_i</code> is akin to saying, “The thermometer causes the weather.”
+    To feign that $$ x_1 \rightarrow x_2 \rightarrow y_i $$
+ is akin to saying, “The thermometer causes the weather.”
   </blockquote>
 
   <h2>🎭 Why It <em>Feels</em> Right (But Isn’t)</h2>
@@ -185,7 +198,7 @@
     Let’s be precise:
     <br>
     The <strong>Propensity Score</strong> is:
-    \[ e(X) = P(T = 1 \mid X) \]
+    $$  e(X) = P(T = 1 \mid X) $$
     the probability of treatment <em>given</em> covariates.
     <br>
     It <em>balances</em> the distribution of covariates \( X \) between treatment and control—not by mediating, but by <em>conditioning</em>.

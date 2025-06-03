@@ -15,8 +15,18 @@
     .line {
       cursor: pointer;
       position: relative;
-      margin-bottom: 28px; /* Clear vertical space between each group */
+      margin-bottom: 28px;
     }
+
+    .line {
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.line:active, .line.show {
+  background: #2a2a2a;
+}
+
 
     .label {
       font-size: 1.2em;
@@ -24,21 +34,19 @@
       padding-bottom: 4px;
     }
 
-.content {
-  opacity: 0;
-  transition: opacity var(--fade-duration, 3s) ease-out;
-  background: #1f1f1f;
-  padding: 10px 14px;
-  margin-top: 8px;
-  border-left: 3px solid #555;
-  border-radius: 4px;
-  display: inline-block;
-  width: auto;
-  /* pointer-events: none; ← 🚫 REMOVE THIS LINE */
-}
+    .content {
+      opacity: 0;
+      transition: opacity var(--fade-duration, 3s) ease-out;
+      background: #1f1f1f;
+      padding: 10px 14px;
+      margin-top: 8px;
+      border-left: 3px solid #555;
+      border-radius: 4px;
+      display: inline-block;
+      width: auto;
+    }
 
-
-    .line:hover .content {
+    .line.show .content {
       opacity: 1;
     }
 
@@ -77,6 +85,18 @@
       background: #444;
     }
   </style>
+  <!-- MathJax -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['$$', '$$']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
 </head>
 <body>
 
@@ -111,6 +131,7 @@
   </div>
 
   <script>
+    // Fade duration slider control
     const fadeSlider = document.getElementById('fadeSlider');
     const fadeValue = document.getElementById('fadeValue');
 
@@ -118,6 +139,13 @@
       const val = fadeSlider.value;
       fadeValue.textContent = val;
       document.documentElement.style.setProperty('--fade-duration', `${val}s`);
+    });
+
+    // Touch/tap toggle for content visibility
+    document.querySelectorAll('.line').forEach(line => {
+      line.addEventListener('click', () => {
+        line.classList.toggle('show');
+      });
     });
   </script>
 
