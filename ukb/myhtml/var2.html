@@ -2,164 +2,155 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Improvisational Thread - Wikipedia Style</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Improvisational Thread</title>
   <style>
-    :root {
-      --bg-light: #ffffff;
-      --bg-dark: #1e1e1e;
-      --text-light: #000000;
-      --text-dark: #f5f5f5;
-      --toc-width: 250px;
-    }
     body {
       margin: 0;
-      font-family: system-ui, sans-serif;
-      background-color: var(--bg-light);
-      color: var(--text-light);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f1117;
+      color: #e0e0e0;
       display: flex;
-      flex-direction: row;
-      min-height: 100vh;
     }
-    .toc {
-      position: sticky;
-      top: 0;
-      width: var(--toc-width);
+
+    nav {
+      width: 200px;
+      background-color: #161821;
       padding: 1rem;
-      background: #f5f5f5;
-      border-right: 1px solid #ccc;
-      overflow-y: auto;
+      border-right: 1px solid #2c2f38;
     }
-    .toc h2 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-    .toc ul {
+
+    nav ul {
       list-style: none;
-      padding-left: 0;
+      padding: 0;
     }
-    .toc li {
-      margin: 0.3rem 0;
+
+    nav ul li {
+      margin-bottom: 1rem;
+      color: #aaa;
+      cursor: pointer;
     }
-    .content {
+
+    main {
       flex: 1;
       padding: 2rem;
-      max-width: 65ch;
-      margin: auto;
+      max-width: 750px;
     }
+
+    aside {
+      width: 300px;
+      background-color: #161821;
+      padding: 1rem;
+      border-left: 1px solid #2c2f38;
+    }
+
     h1 {
-      font-size: 2rem;
-      text-align: center;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
+      color: #fff;
     }
+
     h2 {
-      font-size: 1.5rem;
+      color: #ccc;
+      margin-top: 2rem;
+      font-size: 1.3rem;
+    }
+
+    p, li {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .box {
+      background-color: #1e212b;
+      padding: 1rem;
+      border-radius: 6px;
+      border-left: 4px solid #f9c74f;
       margin-top: 2rem;
     }
-    .takeaway {
-      background: #eaeaea;
-      border-left: 4px solid #333;
+
+    .glitch {
+      font-style: italic;
+      letter-spacing: 0.03em;
+      color: #d4af37;
+    }
+
+    .title-card, .takeaway-card {
+      background-color: #1a1d25;
       padding: 1rem;
-      margin-top: 2rem;
-      font-weight: bold;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
     }
-    .infobox {
-      float: right;
-      width: 200px;
-      background: #fafafa;
-      border: 1px solid #ccc;
-      padding: 1rem;
-      font-size: 0.9rem;
-      margin: 0 0 1rem 1rem;
-    }
-    .dark-mode {
-      --bg-light: var(--bg-dark);
-      --text-light: var(--text-dark);
-    }
-    .toggle-theme {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      background: #222;
-      color: white;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-    }
-    @media (max-width: 768px) {
-      .toc {
-        display: none;
-      }
-      .infobox {
-        float: none;
-        width: auto;
-        margin: 1rem 0;
-      }
+
+    .title-card h3 {
+      margin: 0 0 0.5rem;
     }
   </style>
 </head>
 <body>
-  <nav class="toc">
-    <h2>Contents</h2>
+  <nav>
     <ul>
-      <li><a href="#existential">Existential</a></li>
-      <li><a href="#operational">Operational</a></li>
-      <li><a href="#strategic">Strategic</a></li>
-      <li><a href="#informational">Informational</a></li>
-      <li><a href="#tactical">Tactical</a></li>
+      <li>Existential</li>
+      <li>Operational</li>
+      <li>Strategic</li>
+      <li>Informational</li>
+      <li>Tactical</li>
     </ul>
   </nav>
-  <main class="content">
-    <button class="toggle-theme" onclick="document.body.classList.toggle('dark-mode')">🌓 Toggle Theme</button>
 
-    <h1>🧭 The Improvisational Thread Through the Stack</h1>
+  <main>
+    <h1>🌀 The Improvisational Thread Through the Stack</h1>
 
-    <div class="infobox">
-      <strong>Signal Noise Toolkit</strong><br>
-      Author: Abimereki Muzaale<br>
-      Type: Conceptual Stack<br>
-      Mode: Improvisational<br>
-    </div>
-
-    <h2 id="existential">Existential</h2>
-    <p>The 2020s are obsessed with <strong>existential risk</strong>, but most people don’t live in the vocabulary of ontology or cosmic tail events. They live in “can I eat today?” That’s not a contradiction—<strong>that’s the point</strong>. Existential concerns aren’t abstract. They’re <strong>embodied</strong>. They’re:</p>
+    <h2>Existential:</h2>
     <ul>
-      <li><em>“I was hungry, and you fed me.”</em></li>
-      <li><em>“I was in prison, and you visited me.”</em></li>
+      <li>The 2020s are obsessed with <span class="glitch">existential risk</span>, but most people don’t live in the vocabulary of ontology or cosmic talk.</li>
+      <li>They live through overproduction—it's a problem.</li>
+      <li>Existentiality is not abstract. They reembodied.</li>
+      <li>They’re fiction—that’s the point.</li>
     </ul>
 
-    <h2 id="operational">Operational</h2>
-    <p>The <strong>daily grind</strong>. The rhythm of subsistence. Operational life is <strong>where meaning lands</strong>. But this layer is brittle. You can survive today, but <strong>what about tomorrow</strong>?</p>
-
-    <h2 id="strategic">Strategic</h2>
-    <p>Here comes the game of <strong>sustainability</strong>. Strategy is the anticipatory structure behind operations. But strategy operates under <strong>uncertainty</strong>—never full knowledge. It’s always <strong>a gamble</strong>.</p>
-    <blockquote>Strategy sits on the knife’s edge of information and uncertainty.</blockquote>
-
-    <h2 id="informational">Informational</h2>
-    <p>This layer <strong>feeds strategy</strong>, but never fully satisfies it. Information is <strong>not truth</strong>. It’s fragmentary, noisy, incomplete. Thus, information is <em>potential</em>.</p>
+    <h2>Operational:</h2>
     <ul>
-      <li>You crave more before acting.</li>
-      <li>But you can never have enough.</li>
+      <li>Existential concern obsessed under <span class="glitch">computerization</span> becomes <span class="glitch">robotic care</span>.</li>
     </ul>
 
-    <h2 id="tactical">Tactical</h2>
-    <p>The moment <strong>potential collapses into necessity</strong>. Where the <strong>luxury of analysis is gone</strong>. Improvisation is not anti-existential. It is the <strong>existential in motion</strong>.</p>
+    <h2>Strategic:</h2>
+    <ul>
+      <li>Strategy sits on the knife’s edge of information and uncertainty.</li>
+    </ul>
 
-    <div class="takeaway">
-      🧠 Takeaway:<br><br>
-      Improvisation is <strong>tactical in form</strong>, but <strong>existential in meaning</strong>.<br>
-      It surfaces when:
+    <h2>Informational:</h2>
+    <ul>
+      <li>The transient rides the knife’s edge of information and uncertainty.</li>
+    </ul>
+
+    <h2>Tactical:</h2>
+    <p>Improvisation isn’t granted, it’s pressed into necessity.</p>
+
+    <div class="box">
+      <strong>📦 Takeaway:</strong> Improvisation surfing:
       <ul>
-        <li>Strategy fails</li>
+        <li>Strategy falls</li>
         <li>Information is partial</li>
         <li>Operations break down</li>
-        <li>Existential weight bears down</li>
       </ul>
-      It's <strong>what you do when you don't know what to do, but still must</strong>.
     </div>
   </main>
+
+  <aside>
+    <div class="title-card">
+      <h3>The Improvisational Thread Through the Stack</h3>
+      <p>A neurotemporal feedback loop between abstraction and action.</p>
+      <ul>
+        <li>Tactical in form</li>
+        <li>Existential in meaning</li>
+      </ul>
+    </div>
+
+    <div class="takeaway-card">
+      <h4>🌀 Takeaway</h4>
+      <p>Improvisation is tactical in form, but existential in meaning.</p>
+    </div>
+  </aside>
 </body>
 </html>
